@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luo's homework</title>
+</head>
+
+<body>
+<div class="header_on">
+    <div id="header">
+        <img id="login" class="main shake-chunk" src="img/logo.png">
+
+        <div class="menu">
+            <a href="index.html">首页</a>
+
+            <div class="top_bar">
+                <a href="behind.html">佩奇身后</a>
+                <p class="bar_list">
+                    <a href="behind.html">团队</a>
+                    <a href="behind.html">创作</a>
+                    <a href="behind.html">奖项</a>
+                    <a href="behind.html">关联</a>
+                </p>
+            </div>
+            <div class="top_bar">
+                <a href="story.html">粉红故事</a>
+                <p class="bar_list">
+                    <a href="story.html">背景</a>
+                    <a href="story.html">角色</a>
+                    <a href="story.html">核心</a>
+                    <a href="story.html">摘选</a>
+                </p>
+            </div>
+            <div class="top_bar">
+                <a href="comment.html">观众评价</a>
+                <p class="bar_list">
+                    <a href="comment.html">收获</a>
+                    <a href="comment.html">笑声</a>
+                    <a href="comment.html">吐槽</a>
+                    <a href="comment.html">憧憬</a>
+                </p>
+            </div>
+            <div class="top_bar">
+                <a href="video.html">改编</a>
+                <p class="bar_list">
+                    <a href="video.html">视频</a>
+                </p>
+            </div>
+            <div class="top_bar">
+                <a target="_blank" href="feedback.html">反馈</a>
+                <p class="bar_list">
+                    <a target="_blank" href="feedback.html">反馈</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup clear_float">
+    <div class="close-wrapper">
+        <button class="close">X</button>
+    </div>
+    <form method="get" action="http://localhost:8080/login">
+        <div><label for="username">Username:</label> <input id="username" type="text" name="username" required></div>
+        <div><label for="password">Password:</label> <input id="password" type="password" name="password" required>
+        </div>
+        <input type="submit" value="Login/Register">
+    </form>
+</div>
+
+<div class="video">
+    <video class="main_video video-item1" poster="img/video.jpg" webkit-playsinline="" playsinline="" controls="true">
+        <source src="video/pig.mp4">
+    </video>
+    <video class="main_video video-item2" poster="img/video2.jpg" webkit-playsinline="" playsinline="" controls="true">
+        <source src="video/video2.mp4">
+    </video>
+</div>
+
+<div class="footer_on" style="background-color: #fff">
+    <div class="footer">
+        <ul class="footer_links">
+            <li><a target="_blank" href="http://weibo.com">新浪微博</a></li>
+            <li class="weixin"><a href="javascript:void(0);">官方微信</a></li>
+            <li><a target="_blank" href="http://tieba.baidu.com">官方贴吧</a></li>
+            <li><a target="_blank" href="#">隐私政策</a></li>
+            <li><a target="_blank" href="#">预置应用查询</a></li>
+            <li class="language_list">
+                <div class="lg_container">
+                    <a target="_blank" href="#">简体中文</a>
+
+                    <p class="languages" style="background-position: 92px 177px;bottom: -14px;">
+                        <a target="_blank" href="#">English</a>
+                        <a target="_blank" href="#">Русский</a>
+                        <a target="_blank" href="#">繁體台湾</a>
+                        <a target="_blank" href="#">繁體香港</a>
+                        <a target="_blank" href="#">Indian</a>
+                        <a target="_blank" href="#">简体中文</a>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <p class="copyright">
+            Copyright © 2018 Luo All Right Reserved.
+        </p>
+    </div>
+</div>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/video.css">
+<link rel="stylesheet" type="text/css" href="css/shake.css">
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+.article-main {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+
+.sidebar {
+    flex-basis: 200px;
+    height: 100%;
+    display: flex;
+    margin-top: -250px;
+    margin-left: 370px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 60vw;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+#the-article {
+    height: 100%;
+    max-width: 780px;
+    flex-basis: calc(100% - 200px);
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+#the-article .title {
+    font-size: 40px;
+    border-bottom: 1px solid #f0f0f0;
+    font-weight: 100;
+    line-height: 1.5;
+    margin: -7px 0 20px;
+    font-family: -apple-system, SF UI Display, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+}
+
+.sidebar a {
+    display: block;
+    flex-direction: column;
+    width: 400px;
+    color: #ff89a6;
+}
+
+.sidebar span {
+    bottom: 14px;
+    position: relative;
+}
+
+.sidebar .last-span {
+    top: 14px;
+    position: relative;
+}
+
+.button {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #ff89a6;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.button_last {
+    height: 50px;
+    border: 2px solid #999999 !important;
+    color: #999999 !important;
+}
+
+.button:after {
+    position: absolute;
+    transition: 0.3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #ff89a6;
+}
+
+.button:hover {
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.button:hover:after {
+    left: 0;
+    width: 0;
+}

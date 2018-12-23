@@ -6,24 +6,26 @@
     z-index: 99;
     background: rgba(255, 246, 254, 0.8);
 }
+
 .world {
     position: absolute;
-    margin:auto;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    width:800px;
-    height:200px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 800px;
+    height: 200px;
 }
+
 .bottomline {
     position: absolute;
-    margin:auto;
-    left:0;
-    top:200px;
-    right:0;
-    bottom:0;
-    padding-bottom:50px;
+    margin: auto;
+    left: 0;
+    top: 200px;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 50px;
     letter-spacing: 2px;
     font-size: 12px;
     text-align: center;
@@ -31,6 +33,7 @@
     z-index: 99;
     color: grey;
 }
+
 a {
     position: relative;
     letter-spacing: 2px;
@@ -38,55 +41,65 @@ a {
     font-size: 12px;
     text-decoration: none;
 }
+
 /* BASIC CUBE CREATION */
 /* BASIC CUBE CREATION */
 /* BASIC CUBE CREATION */
 
 .box {
-    position:absolute;
-    margin:auto;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     width: 100px;
     height: 100px;
     animation: rotate 5s ease-in-out infinite;
     transform-style: preserve-3d;
 }
+
 .box:nth-of-type(1) {
-    animation-delay:-5s;
-    left:-600px;
+    animation-delay: -5s;
+    left: -600px;
 }
+
 .box:nth-of-type(2) {
-    animation-delay:-4s;
-    left:-300px;
+    animation-delay: -4s;
+    left: -300px;
 }
+
 .box:nth-of-type(3) {
-    animation-delay:-3s;
-    left:0px;
+    animation-delay: -3s;
+    left: 0px;
 }
+
 .box:nth-of-type(4) {
-    animation-delay:-2s;
-    left:300px;
+    animation-delay: -2s;
+    left: 300px;
 }
+
 .box:nth-of-type(5) {
-    animation-delay:-1s;
-    left:600px;
+    animation-delay: -1s;
+    left: 600px;
 }
+
 .plane1, .plane2 {
     position: absolute;
-    opacity:0.8;
+    opacity: 0.8;
 }
+
 .plane2 {
     transform: rotateY(90deg);
 }
+
 .heart {
     background-color: #ff89a6;
     height: 50px;
     transform: rotate(-45deg);
     width: 50px;
 }
+
 .heart:before {
     content: "";
     background-color: #ff89a6;
@@ -94,8 +107,9 @@ a {
     height: 50px;
     position: absolute;
     width: 50px;
-    top:-25px;
+    top: -25px;
 }
+
 .heart:after {
     content: "";
     background-color: #ff89a6;
@@ -103,8 +117,8 @@ a {
     height: 50px;
     position: absolute;
     width: 50px;
-    top:0px;
-    left:25px;
+    top: 0px;
+    left: 25px;
 }
 
 /* Rotation animation to actually see the cube */

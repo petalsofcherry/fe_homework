@@ -9,7 +9,7 @@
 <body>
 <div class="header_on">
     <div id="header">
-        <img class="main shake-slow" src="img/logo.png">
+        <img id="login" class="main shake-chunk" src="img/logo.png">
 
         <div class="menu">
             <a href="index.html">首页</a>
@@ -20,6 +20,7 @@
                     <a href="behind.html">团队</a>
                     <a href="behind.html">创作</a>
                     <a href="behind.html">奖项</a>
+                    <a href="behind.html">关联</a>
                 </p>
             </div>
             <div class="top_bar">
@@ -34,19 +35,24 @@
             <div class="top_bar">
                 <a href="comment.html">观众评价</a>
                 <p class="bar_list">
-                    <a href="story.html">收获</a>
-                    <a href="story.html">笑声</a>
-                    <a href="story.html">吐槽</a>
+                    <a href="comment.html">收获</a>
+                    <a href="comment.html">笑声</a>
+                    <a href="comment.html">吐槽</a>
+                    <a href="comment.html">憧憬</a>
                 </p>
             </div>
             <div class="top_bar">
-                <a href="feedback.html">反馈</a>
+                <a href="video.html">改编</a>
                 <p class="bar_list">
-                    <a href="feedback.html">反馈</a>
+                    <a href="video.html">视频</a>
                 </p>
             </div>
-
-            <a id="login" href="#">Welcome</a>
+            <div class="top_bar">
+                <a target="_blank" href="feedback.html">反馈</a>
+                <p class="bar_list">
+                    <a target="_blank" href="feedback.html">反馈</a>
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -57,28 +63,72 @@
     </div>
     <form method="get" action="http://localhost:8080/login">
         <div><label for="username">Username:</label> <input id="username" type="text" name="username" required></div>
-        <div><label for="password">Password:</label> <input id="password" type="password" name="password" required></div>
+        <div><label for="password">Password:</label> <input id="password" type="password" name="password" required>
+        </div>
         <input type="submit" value="Login/Register">
     </form>
 </div>
 
+<div class="article-main">
+    <div id="the-article">
+    </div>
+    <div class="sidebar">
+        <a class="button" href="behind.html">
+            <img src="img/icon1.png">
+            <span>佩奇身后</span>
+        </a>
+        <a class="button" href="story.html">
+            <img src="img/icon2.png">
+            <span>粉红故事</span>
+        </a>
+        <a class="button" href="comment.html">
+            <img src="img/icon3.png">
+            <span>观众评价</span>
+        </a>
+        <a class="button button_last" href="index.html">
+            <span class="last-span">其他精彩内容</span>
+        </a>
+    </div>
+</div>
 
-<div class="the-article">
-    <p id="articlecontent">
+<div class="footer_on" style="background-color: #fff">
+    <div class="footer">
+        <ul class="footer_links">
+            <li><a target="_blank" href="http://weibo.com">新浪微博</a></li>
+            <li class="weixin"><a href="javascript:void(0);">官方微信</a></li>
+            <li><a target="_blank" href="http://tieba.baidu.com">官方贴吧</a></li>
+            <li><a target="_blank" href="#">隐私政策</a></li>
+            <li><a target="_blank" href="#">预置应用查询</a></li>
+            <li class="language_list">
+                <div class="lg_container">
+                    <a target="_blank" href="#">简体中文</a>
 
-    </p>
+                    <p class="languages" style="background-position: 92px 177px;bottom: -14px;">
+                        <a target="_blank" href="#">English</a>
+                        <a target="_blank" href="#">Русский</a>
+                        <a target="_blank" href="#">繁體台湾</a>
+                        <a target="_blank" href="#">繁體香港</a>
+                        <a target="_blank" href="#">Indian</a>
+                        <a target="_blank" href="#">简体中文</a>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <p class="copyright">
+            Copyright © 2018 Luo All Right Reserved.
+        </p>
+    </div>
 </div>
 
 
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/csshake/dist/csshake.min.css">
+<link rel="stylesheet" href="css/article.css">
+<link rel="stylesheet" type="text/css" href="css/shake.css">
 <script src="js/script.js"></script>
 <script>
-    (function() {
-        let str = '<p class="title">' + localStorage.getItem('title') + '</p><p class="content">'+localStorage.getItem('text1')+'<img src="' + localStorage.getItem('img') + '" />' + localStorage.getItem('text2') + '</p>';
-        console.log(str);
-        let content = document.getElementById('articlecontent');
-        console.log(content);
+    (function () {
+        let str = '<p class="title">' + localStorage.getItem('title') + '</p><p class="content">' + localStorage.getItem('text1') + '<img src="' + localStorage.getItem('img') + '" />' + localStorage.getItem('text2') + '</p>';
+        let content = document.getElementById('the-article');
         content.innerHTML = str;
     }());
 </script>

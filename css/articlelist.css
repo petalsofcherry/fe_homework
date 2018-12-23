@@ -8,15 +8,15 @@
 .sidebar {
     flex-basis: 200px;
     height: 100%;
-    background-color: #fff;
     display: flex;
+    margin-top: -250px;
+    margin-left: 370px;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
     width: 60vw;
     max-width: 1200px;
-    margin: 0 auto;
     min-height: 100vh;
 }
 
@@ -31,14 +31,16 @@
 .sidebar a {
     display: block;
     flex-direction: column;
-    width: 200px;
+    width: 400px;
     color: #ff89a6;
 }
 
 .article {
     flex-direction: row;
     display: flex;
-    padding-bottom: 50px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .article .info {
@@ -51,7 +53,11 @@
     font-weight: 700;
     line-height: 1.5;
     margin: -7px 0 20px;
-    font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+    font-family: -apple-system, SF UI Display, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+}
+
+.info .content_wrapper {
+    width: 800px;
 }
 
 .info .content {
@@ -59,7 +65,7 @@
     overflow: hidden;
     color: #999;
     text-overflow: ellipsis;
-    display:-webkit-box;
+    display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
@@ -73,6 +79,16 @@
     width: 125px;
 }
 
+.sidebar span {
+    bottom: 14px;
+    position: relative;
+}
+
+.sidebar .last-span {
+    top: 14px;
+    position: relative;
+}
+
 .button {
     flex: 1 1 auto;
     margin: 10px;
@@ -83,6 +99,12 @@
     position: relative;
     overflow: hidden;
     transition: 0.3s;
+}
+
+.button_last {
+    height: 50px;
+    border: 2px solid #999999 !important;
+    color: #999999 !important;
 }
 
 .button:after {
@@ -100,6 +122,7 @@
     cursor: pointer;
     border-radius: 30px;
 }
+
 .button:hover:after {
     left: 0;
     width: 0;

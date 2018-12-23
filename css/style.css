@@ -3,16 +3,16 @@
     padding: 0;
 }
 
-ul,li {
+ul, li {
     list-style: none;
 }
 
 a {
-    text-decoration:none
+    text-decoration: none
 }
 
 body {
-   width: 100%;
+    width: 100%;
     height: 100%;
 }
 
@@ -20,8 +20,7 @@ h3 {
     font-weight: normal;
 }
 
-
-.clear_float::after{
+.clear_float::after {
     content: '';
     display: block;
     clear: both;
@@ -82,7 +81,6 @@ h3 {
     position: relative;
     color: #f7b7c0 !important;
     margin-right: 35px;
-
 }
 
 .top_bar:hover .bar_list {
@@ -115,11 +113,11 @@ h3 {
     padding-bottom: 648px;
 }
 
-.slider-item{
+.slider-item {
     padding-bottom: 660px;
 }
 
-.slider-item{
+.slider-item {
     position: absolute;
     width: 100%;
     background-size: 100% 100%;
@@ -175,43 +173,48 @@ h3 {
     background: #51B1D9;
 }
 
-.slider-item,.focus-item {
+.slider-item, .focus-item {
     animation-duration: 20s;
 }
-.slider-item1,.focus-item1 {
+
+.slider-item1, .focus-item1 {
     animation-delay: -1s;
 }
-.slider-item2,.focus-item2 {
+
+.slider-item2, .focus-item2 {
     animation-delay: 3s;
 }
-.slider-item3,.focus-item3 {
+
+.slider-item3, .focus-item3 {
     animation-delay: 7s;
 }
-.slider-item4,.focus-item4 {
+
+.slider-item4, .focus-item4 {
     animation-delay: 11s;
 }
-.slider-item5,.focus-item5 {
+
+.slider-item5, .focus-item5 {
     animation-delay: 15s;
 }
 
 @keyframes fade {
-    0%{
+    0% {
         opacity: 0;
         z-index: 2;
     }
-    5%{
+    5% {
         opacity: 1;
         z-index: 1;
     }
-    20%{
+    20% {
         opacity: 1;
         z-index: 1;
     }
-    25%{
+    25% {
         opacity: 0;
         z-index: 0;
     }
-    100%{
+    100% {
         opacity: 0;
         z-index: 0;
     }
@@ -338,7 +341,7 @@ h3 {
     height: 28px;
 }
 
-.lg_container:hover .languages{
+.lg_container:hover .languages {
     display: block;
 }
 
@@ -372,7 +375,7 @@ h3 {
 }
 
 .popup {
-    background: rgba(255,255,255, .8);
+    background: rgba(255, 255, 255, .8);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -382,7 +385,6 @@ h3 {
     pointer-events: none;
     transition: opacity .3s ease-in-out;
     padding: 30px;
-
 
 }
 
